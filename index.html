@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home | SubliCom | Sublimados que te acompañan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="description" content="Imprimile tus ideas y tu estílo a prendas, vajillas, almohadas y más.">
+    <meta name="keywords" content="sublimacion, sublimado, remeras, tazas, platos, gorras, almohadas, almohadones">
+    <meta property="og:title" content="Diseños y Sublimados | SubliCom">
+    <meta property="og:description" content="Impresiones y sublimados de la mejor calidad.">
+    <meta property="og:image" content="img/">
+    <meta name="author" content="Valentin Virzi & Alejo Costas">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="#header">
+            <img src="img/logo-sublicom.png" alt="Logo SubliCom">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#header">Inicio</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#products">Productos</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="" alt="user icon">
+                    Ingresá / Registrate
+                </li>
+                <hr>
+                <li>
+                    <button type="button">
+                        <p>$<span>0</span></p>
+                        <img src="" alt="carrito">
+                        <span>5</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="" alt="menu icon">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main__intro">
+            <div class="main__intro-text">
+                    <h1 class="main__home-title main__intro-inside">Conseguí los mejores pescados & mariscos</h1>
+                    <p class="main__description main__intro-inside">Te llevamos mercadería de primera calidad a la puerta de tu casa</p>
+                    <button type="button" class="main__intro-button main__intro-inside">
+                        <a class="main_intro-button-a" href="#products">Pedí ahora</a>
+                    </button>   
+            </div>
+            <div class="main__intro-img">
+            </div>
+        </section>
+        <section>
+            <!-- ofertas -->
+        </section>
+        <section id="products">
+            <div class="main-subpage__intro">
+                <h1 class="main-subpage__title">Productos</h1>
+            </div>
+            <div>
+                <aside>
+                    <div>
+                        <button type="button">Limpiar Filtros</button>
+                    </div>
+                    <ul>
+                        <li>
+                            <h3>Categorías</h3>
+                            <ul>
+                                <li>
+                                    <button type="button">Remeras</button>
+                                </li>
+                                <li>
+                                    <button type="button">Tazas</button>
+                                </li>
+                                <li>
+                                    <button type="button">Gorras</button>
+                                </li>
+                                <li>
+                                    <button type="button">Almohadas</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Precio</h3>
+                            <form action="js/price-filter.js" method="post">
+                                <input type="number" min="0" placeholder="Mínimo">
+                                <hr>
+                                <input type="number" min="0" placeholder="Máximo">
+                                <button type="submit">></button>
+                            </form>
+                        </li>
+                        <li>
+                            <h3>Talle</h3>
+                            <ul>
+                                <li>
+                                    <button type="button">XS</button>
+                                </li>
+                                <li>
+                                    <button type="button">S</button>
+                                </li>
+                                <li>
+                                    <button type="button">M</button>
+                                </li>
+                                <li>
+                                    <button type="button">L</button>
+                                </li>
+                                <li>
+                                    <button type="button">XL</button>
+                                </li>
+                                <li>
+                                    <button type="button">XXL</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+                <ul>
+                    <li class="main-products__item">
+                        <img src="../img/penca-salmon.png" alt="penca de salmon"
+                            class="main-products__item-img">
+                        <div class='main-products__item-main'>
+                            <h4 class="main-products__item-name">Penca de Salmón Rosado</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <span>5.000</span>
+                                    <ins>$/U</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan <span>11</span>u.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <form class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number" min="0">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button" type="submit">Añadir al carrito</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <img src="../img/trucha-mariposa-fresca.jpeg" alt="trucha mariposa"
+                            class="main-products__item-img">
+                        <div class='main-products__item-main'>
+                            <h4 class="main-products__item-name">Trucha Mariposa Despinada</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <span>5.000</span>
+                                    <ins>$/U</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan <span>11</span>u.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <form class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number" min="0">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button" type="submit">Añadir al carrito</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <img src="../img/filet-truchon.jpg" alt="filet de truchon"
+                            class="main-products__item-img">
+                        <div class='main-products__item-main'>
+                            <h4 class="main-products__item-name">Filet de Truchón</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <span>5.000</span>
+                                    <ins>$/U</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan <span>11</span>u.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <form class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number" min="0">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button" type="submit">Añadir al carrito</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
