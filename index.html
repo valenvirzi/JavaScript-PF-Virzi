@@ -17,40 +17,45 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <a href="#header">
-            <img src="img/logo-sublicom.png" alt="Logo SubliCom">
+    <header class="header">
+        <a class="header__link-logo" href="#hero-section">
+            <img class="header__logo" src="img/logo-transparent.png" alt="Logo SubliCom">
         </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#header">Inicio</a>
+        <nav class="header__nav">
+            <ul class="header__nav-sections">
+                <li class="header__nav-sections-item">
+                    <a class="header__nav-sections-item-link" href="#hero-section">Inicio</a>
                 </li>
-                <hr>
-                <li>
-                    <a href="#products">Productos</a>
+                <hr class="header__nav-hr">
+                <li class="header__nav-sections-item">
+                    <a class="header__nav-sections-item-link" href="#products">Productos</a>
                 </li>
-                <hr>
-                <li>
-                    <a href="#contact">Contacto</a>
+                <hr class="header__nav-hr">
+                <li class="header__nav-sections-item">
+                    <a class="header__nav-sections-item-link" href="#contact">Contacto</a>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <img src="" alt="user icon">
-                    Ingresá / Registrate
-                </li>
-                <hr>
-                <li>
-                    <button type="button">
-                        <p>$<span>0</span></p>
-                        <img src="" alt="carrito">
-                        <span>5</span>
+            <ul class="header__nav-menu">
+                <li class="header__nav-menu-item">
+                    <button class="header__nav-menu-user-btn menu-btn" type="button">
+                        <img class="header__nav-menu-item-svg" src="img/user.svg" alt="user icon">
+                        <p class="header__nav-menu-item-text">Ingresá / Registrate</p>
                     </button>
                 </li>
-                <li>
-                    <button type="button">
-                        <img src="" alt="menu icon">
+                <hr class="header__nav-hr">
+                <li class="header__nav-menu-item">
+                    <button class="header__nav-menu-cart-btn menu-btn" type="button">
+                        <p class="header__nav-menu-cart-price">
+                            $
+                            <span class="header__nav-menu-cart-total">0</span>
+                        </p>
+                        <img class="header__nav-menu-item-svg" src="img/shopping-cart.svg" alt="carrito">
+                        <span class="header__nav-menu-cart-notification">5</span>
+                    </button>
+                </li>
+                <li class="header__nav-menu-item">
+                    <button class="header__nav-menu-toggle menu-btn" type="button">
+                        <img class="header__nav-menu-svg" src="img/menu-toggle.svg" alt="menu icon">
                     </button>
                 </li>
             </ul>
@@ -58,170 +63,238 @@
     </header>
 
     <main>
-        <section class="main__intro">
+        <section class="main__hero">
+            <div id="hero-section"></div>
+            <!-- Rearmar las clases de esta sección -->
             <div class="main__intro-text">
-                    <h1 class="main__home-title main__intro-inside">Conseguí los mejores pescados & mariscos</h1>
-                    <p class="main__description main__intro-inside">Te llevamos mercadería de primera calidad a la puerta de tu casa</p>
-                    <button type="button" class="main__intro-button main__intro-inside">
-                        <a class="main_intro-button-a" href="#products">Pedí ahora</a>
-                    </button>   
+                <h1 class="main__home-title main__intro-inside">Impresiones & sublimados de la mejor calidad</h1>
+                <p class="main__description main__intro-inside">Imprimile tu estílo y tus ideas a prendas, vajillas,
+                    almohadas y más</p>
+                <!-- Sacarle el elemento 'button' dejando solo 'a' con el estilo de 'button' -->
+                <button type="button" class="main__intro-button main__intro-inside">
+                    <a class="main_intro-button-a" href="#products">Pedí ahora</a>
+                </button>
             </div>
             <div class="main__intro-img">
+                <!-- Buscar imagen para poner de fondo -->
             </div>
         </section>
         <section>
-            <!-- ofertas -->
+            <!-- OFERTAS -->
         </section>
-        <section id="products">
+        <section class="products" id="products">
             <div class="main-subpage__intro">
                 <h1 class="main-subpage__title">Productos</h1>
             </div>
-            <div>
-                <aside>
+            <div class="products__main">
+                <aside class="products__main-aside">
                     <div>
                         <button type="button">Limpiar Filtros</button>
                     </div>
-                    <ul>
-                        <li>
-                            <h3>Categorías</h3>
-                            <ul>
-                                <li>
-                                    <button type="button">Remeras</button>
+                    <ul class="products__aside-list">
+                        <li class="products__aside-list-item">
+                            <h3 class="products__aside-item-h3">Categorías</h3>
+                            <ul class="products__aside-item-filters">
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">Remeras</button>
                                 </li>
-                                <li>
-                                    <button type="button">Tazas</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">Tazas</button>
                                 </li>
-                                <li>
-                                    <button type="button">Gorras</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">Gorras</button>
                                 </li>
-                                <li>
-                                    <button type="button">Almohadas</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">Almohadas</button>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <h3>Precio</h3>
-                            <form action="js/price-filter.js" method="post">
-                                <input type="number" min="0" placeholder="Mínimo">
-                                <hr>
-                                <input type="number" min="0" placeholder="Máximo">
-                                <button type="submit">></button>
+                        <li class="products__aside-list-item">
+                            <h3 class="products__aside-item-h3">Precio</h3>
+                            <form class="products__aside-item-filter-price" action="js/price-filter.js" method="post">
+                                <input class="products__aside-item-price-input" type="number" min="0"
+                                    placeholder="Mínimo">
+                                <hr class="products__aside-item-price-hr">
+                                <input class="products__aside-item-price-input" type="number" min="0"
+                                    placeholder="Máximo">
+                                <button class="products__aside-item-price-btn" type="submit">></button>
                             </form>
                         </li>
-                        <li>
-                            <h3>Talle</h3>
-                            <ul>
-                                <li>
-                                    <button type="button">XS</button>
+                        <li class="products__aside-list-item">
+                            <h3 class="products__aside-item-h3">Talle</h3>
+                            <ul class="products__aside-item-filters">
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">XS</button>
                                 </li>
-                                <li>
-                                    <button type="button">S</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">S</button>
                                 </li>
-                                <li>
-                                    <button type="button">M</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">M</button>
                                 </li>
-                                <li>
-                                    <button type="button">L</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">L</button>
                                 </li>
-                                <li>
-                                    <button type="button">XL</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">XL</button>
                                 </li>
-                                <li>
-                                    <button type="button">XXL</button>
+                                <li class="products__item-filters-type">
+                                    <button class="products__item-filters-type-btn" type="button">XXL</button>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </aside>
-                <ul>
-                    <li class="main-products__item">
-                        <img src="../img/penca-salmon.png" alt="penca de salmon"
+                <ul class="products__main-list">
+                    <li class="products-list__item">
+                        <img class="products-list__item-img" src="img/penca-salmon.png" alt="penca de salmon"
                             class="main-products__item-img">
-                        <div class='main-products__item-main'>
-                            <h4 class="main-products__item-name">Penca de Salmón Rosado</h4>
-                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
-                            <div class='main-products__item-info'>
-                                <div class="main-products__item-price">
-                                    <span>5.000</span>
-                                    <ins>$/U</ins>
+                        <div class="products-list__item-main">
+                            <h4 class="products-list__item-name">Penca de Salmón Rosado</h4>
+                            <p class="products-list__item-desc">Camarón pelado congelado de Ecuador</p>
+                            <div class="products-list__item-info">
+                                <div class="products-list__item-price">
+                                    <span class="products-list__item-price-num">5.000</span>
+                                    <ins class="products-list__item-price-symbol">$/U</ins>
                                 </div>
-                                <div class="main-products__item-duration">
-                                    <ins>◷</ins>
-                                    <p>Quedan <span>11</span>u.</p>
+                                <div class="main-products__item-stock">
+                                    <ins class="main-products__item-stock-symbol">◷</ins>
+                                    <p class="main-products__item-stock-text">Quedan <span
+                                            class="main-products__item-stock-number">11</span>u.</p>
                                 </div>
                             </div>
-                            <hr />
-                            <form class="main-products__item-bottom">
-                                <div class="main-products__item-inputs">
-                                    <button class="main-products__item-button">-</button>
-                                    <input type="number" class="main-products__item-number" min="0">
-                                    <button class="main-products__item-button">+</button>
+                            <hr class="products-list__item-hr" />
+                            <form class="products-list__item-form" action="js/main.js">
+                                <div class="products-list__item-form-inputs">
+                                    <button type="button" class="products-list__item-form-btn">-</button>
+                                    <input type="number" class="products-list__item-form-number" min="0">
+                                    <button type="button" class="products-list__item-form-btn">+</button>
                                 </div>
-                                <button class="main-products__item-cart-button" type="submit">Añadir al carrito</button>
+                                <button class="products-list__item-form-cart" type="submit">Añadir al carrito</button>
                             </form>
                         </div>
                     </li>
-                    <li class="main-products__item">
-                        <img src="../img/trucha-mariposa-fresca.jpeg" alt="trucha mariposa"
-                            class="main-products__item-img">
-                        <div class='main-products__item-main'>
-                            <h4 class="main-products__item-name">Trucha Mariposa Despinada</h4>
-                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
-                            <div class='main-products__item-info'>
-                                <div class="main-products__item-price">
-                                    <span>5.000</span>
-                                    <ins>$/U</ins>
+                    <li class="products-list__item">
+                        <img class="products-list__item-img" src="img/trucha-mariposa-fresca.jpeg"
+                            alt="trucha mariposa">
+                        <div class="products-list__item-main">
+                            <h4 class="products-list__item-name">Penca de Salmón Rosado</h4>
+                            <p class="products-list__item-desc">Camarón pelado congelado de Ecuador</p>
+                            <div class="products-list__item-info">
+                                <div class="products-list__item-price">
+                                    <span class="products-list__item-price-num">5.000</span>
+                                    <ins class="products-list__item-price-symbol">$/U</ins>
                                 </div>
-                                <div class="main-products__item-duration">
-                                    <ins>◷</ins>
-                                    <p>Quedan <span>11</span>u.</p>
+                                <div class="main-products__item-stock">
+                                    <ins class="main-products__item-stock-symbol">◷</ins>
+                                    <p class="main-products__item-stock-text">
+                                        Quedan <span class="main-products__item-stock-number">11</span>u.
+                                    </p>
                                 </div>
                             </div>
-                            <hr />
-                            <form class="main-products__item-bottom">
-                                <div class="main-products__item-inputs">
-                                    <button class="main-products__item-button">-</button>
-                                    <input type="number" class="main-products__item-number" min="0">
-                                    <button class="main-products__item-button">+</button>
+                            <hr class="products-list__item-hr" />
+                            <form class="products-list__item-form" action="js/main.js">
+                                <div class="products-list__item-form-inputs">
+                                    <button type="button" class="products-list__item-form-btn">-</button>
+                                    <input type="number" class="products-list__item-form-number" min="0">
+                                    <button type="button" class="products-list__item-form-btn">+</button>
                                 </div>
-                                <button class="main-products__item-cart-button" type="submit">Añadir al carrito</button>
+                                <button class="products-list__item-form-cart" type="submit">Añadir al carrito</button>
                             </form>
                         </div>
                     </li>
-                    <li class="main-products__item">
-                        <img src="../img/filet-truchon.jpg" alt="filet de truchon"
-                            class="main-products__item-img">
-                        <div class='main-products__item-main'>
-                            <h4 class="main-products__item-name">Filet de Truchón</h4>
-                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
-                            <div class='main-products__item-info'>
-                                <div class="main-products__item-price">
-                                    <span>5.000</span>
-                                    <ins>$/U</ins>
+                    <li class="products-list__item">
+                        <img class="products-list__item-img" src="img/trucha-mariposa-fresca.jpeg"
+                            alt="trucha mariposa">
+                        <div class="products-list__item-main">
+                            <h4 class="products-list__item-name">Penca de Salmón Rosado</h4>
+                            <p class="products-list__item-desc">Camarón pelado congelado de Ecuador</p>
+                            <div class="products-list__item-info">
+                                <div class="products-list__item-price">
+                                    <span class="products-list__item-price-num">5.000</span>
+                                    <ins class="products-list__item-price-symbol">$/U</ins>
                                 </div>
-                                <div class="main-products__item-duration">
-                                    <ins>◷</ins>
-                                    <p>Quedan <span>11</span>u.</p>
+                                <div class="main-products__item-stock">
+                                    <ins class="main-products__item-stock-symbol">◷</ins>
+                                    <p class="main-products__item-stock-text">Quedan <span
+                                            class="main-products__item-stock-number">11</span>u.</p>
                                 </div>
                             </div>
-                            <hr />
-                            <form class="main-products__item-bottom">
-                                <div class="main-products__item-inputs">
-                                    <button class="main-products__item-button">-</button>
-                                    <input type="number" class="main-products__item-number" min="0">
-                                    <button class="main-products__item-button">+</button>
+                            <hr class="products-list__item-hr" />
+                            <form class="products-list__item-form" action="js/main.js">
+                                <div class="products-list__item-form-inputs">
+                                    <button type="button" class="products-list__item-form-btn">-</button>
+                                    <input type="number" class="products-list__item-form-number" min="0">
+                                    <button type="button" class="products-list__item-form-btn">+</button>
                                 </div>
-                                <button class="main-products__item-cart-button" type="submit">Añadir al carrito</button>
+                                <button class="products-list__item-form-cart" type="submit">Añadir al carrito</button>
                             </form>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+        <section id="contact" class="contact">
+            <h2 class="contact__h2">Ante cualquier duda, consulta o reclamo dejá tu mensaje acá abajo,<br>queremos
+                conocer tu opinión</h2>
+            <form class="contact__form" action="js/main.js">
+                <label class="contact__form-label" for="">Nombre:</label>
+                <input class="contact__form-input" type="text" placeholder="Ingresá tu nombre" required>
+                <label class="contact__form-label" for="">Correo Electrónico:</label>
+                <input class="contact__form-input" type="email" placeholder="Ingresá tu correo electrónico" required>
+                <label class="contact__form-label" for="">Mensaje:</label>
+                <textarea class="contact__form-input" name="" id="" cols="30" rows="10" placeholder="Ingresá tu mensaje"
+                    required></textarea>
+                <button class="contact__form-btn" type="submit">Enviar</button>
+            </form>
+            <h2 class="contact__h2">También nos podes contactar por las redes sociales listadas debajo</h2>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <ul class="footer__socials">
+            <li>
+                <a class="footer__link-logo footer__link" href="#hero-section">
+                    <img class="" logo="company" src="img/logo-transparent.png" alt="Logo de la Empresa">
+                </a>
+            </li>
+            <li>
+                <ul class="footer__main-socials-img">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="img/instagram-logo.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com" target="_blank">
+                            <img src="img/whatsapp-logo.png" alt="WhatsApp">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="img/youtube-logo.png" alt="YouTube">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="footer__legal">
+            <li>
+                <a class="footer__link" href="">Aviso legal</a>
+            </li>
+            <li>
+                <a class="footer__link" href="">Condiciones de uso</a>
+            </li>
+            <li>
+                <a class="footer__link" href="">Política de privacidad</a>
+            </li>
+            <li>
+                <a class="footer__link" href="">Configuración de cookies</a>
+            </li>
+            <li>
+                <p>SubliCom®</p>
+            </li>
+        </ul>
     </footer>
 </body>
 
