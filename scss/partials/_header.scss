@@ -6,8 +6,8 @@
     align-items: center;
     height: clamp(3rem ,10vh, 3.5rem);
     padding: 0 1rem;
-    column-gap: 6rem;
-    background: linear-gradient(270deg, hsla(210, 69.7, 32.4), hsla(213, 34.4, 47.8));
+    column-gap: 10rem;
+    background: linear-gradient(270deg, hsla(210, 69.7, 32.4), rgb(53, 103, 164));
     font-size: 1.05rem;
     font-weight: 500;
     color: hsl(0, 0%, 100%);
@@ -57,11 +57,7 @@
                     column-gap: 0.5rem;
                     cursor: pointer;
                 }
-                .header__nav-menu-user-btn {
-                    .header__nav-menu-item-text {
 
-                    }
-                }
                 .header__nav-menu-user-btn:hover {
                     .header__nav-menu-item-text {
                         color: hsla(39, 100, 63,);
@@ -69,11 +65,6 @@
                 }
                 .header__nav-menu-cart-btn {
                     position: relative;
-                    .header__nav-menu-cart-price {
-                        .header__nav-menu-cart-total {
-
-                        }
-                    }
                     .header__nav-menu-cart-notification {
                         display: flex;
                         justify-content: center;
@@ -81,8 +72,8 @@
                         position: absolute;
                         top: 0px;
                         right: -8px;
-                        width: 1rem;
-                        height: 1rem;
+                        width: 1.05rem;
+                        height: 1.05rem;
                         font-size: 0.75rem;
                         line-height: 0.8rem;
                         font-weight: 700;

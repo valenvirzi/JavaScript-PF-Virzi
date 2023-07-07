@@ -50,7 +50,7 @@
                             <span class="header__nav-menu-cart-total">0</span>
                         </p>
                         <img class="header__nav-menu-item-svg" src="img/shopping-cart.svg" alt="carrito">
-                        <span class="header__nav-menu-cart-notification">5</span>
+                        <span class="header__nav-menu-cart-notification">55</span>
                     </button>
                 </li>
                 <li class="header__nav-menu-item">
@@ -66,14 +66,12 @@
         <section class="main__hero">
             <div id="hero-section"></div>
             <!-- Rearmar las clases de esta sección -->
-            <div class="main__intro-text">
-                <h1 class="main__home-title main__intro-inside">Impresiones & sublimados de la mejor calidad</h1>
-                <p class="main__description main__intro-inside">Imprimile tu estílo y tus ideas a prendas, vajillas,
+            <div class="main__hero-text">
+                <h1 class="main__hero-title main__hero-inside">Impresiones & sublimados de la mejor calidad</h1>
+                <p class="main__hero-desc main__hero-inside">Imprimile tu estílo y tus ideas a prendas, vajillas,
                     almohadas y más</p>
                 <!-- Sacarle el elemento 'button' dejando solo 'a' con el estilo de 'button' -->
-                <button type="button" class="main__intro-button main__intro-inside">
-                    <a class="main_intro-button-a" href="#products">Pedí ahora</a>
-                </button>
+                <a class="main__hero-a main__hero-inside" href="#products">Pedí ahora</a>
             </div>
             <div class="main__intro-img">
                 <!-- Buscar imagen para poner de fondo -->
@@ -117,7 +115,9 @@
                                 <hr class="products__aside-item-price-hr">
                                 <input class="products__aside-item-price-input" type="number" min="0"
                                     placeholder="Máximo">
-                                <button class="products__aside-item-price-btn" type="submit">></button>
+                                <button class="products__aside-item-price-btn" type="submit">
+                                    <img class="products__aside-item-price-btn-svg" src="img/arrow-right.svg" alt="">
+                                </button>
                             </form>
                         </li>
                         <li class="products__aside-list-item">
@@ -297,5 +297,5 @@
         </ul>
     </footer>
 </body>
-
+<script src="js/main.js"></script>
 </html>
