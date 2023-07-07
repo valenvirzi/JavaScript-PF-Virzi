@@ -7,10 +7,10 @@
     height: clamp(3rem ,10vh, 3.5rem);
     padding: 0 1rem;
     column-gap: 10rem;
-    background: linear-gradient(270deg, hsla(210, 69.7, 32.4), rgb(53, 103, 164));
+    background: linear-gradient(270deg, rgb(25, 83, 140), rgb(53, 103, 164));
     font-size: 1.05rem;
     font-weight: 500;
-    color: hsl(0, 0%, 100%);
+    color: rgb(255, 255, 255);
     .header__link-logo {
         .header__logo {
             max-width: 8rem;
@@ -25,17 +25,17 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            // column-gap: 2rem;
             width: 100%;
             .header__nav-sections-item {
                 .header__nav-sections-item-link {
-                    background-image: linear-gradient(hsla(39, 100, 63,),hsla(39, 100, 63,));
+                    background-image: linear-gradient(rgb(255, 188, 66),rgb(255, 188, 66));
                     background-size: 0% 2px;
                     background-repeat: no-repeat;
                     background-position: center bottom;
                     transition: 300ms;
                 }
                 .header__nav-sections-item-link:hover {
+                    color: rgb(255, 188, 66);
                     background-size: 100% 2px;
                 }
             }
@@ -60,7 +60,7 @@
 
                 .header__nav-menu-user-btn:hover {
                     .header__nav-menu-item-text {
-                        color: hsla(39, 100, 63,);
+                        color: rgb(255, 188, 66);
                     }
                 }
                 .header__nav-menu-cart-btn {
@@ -78,8 +78,8 @@
                         line-height: 0.8rem;
                         font-weight: 700;
                         border-radius: 50%;
-                        background-color: hsl(0, 100%, 50%);
-                        color: hsl(0, 0%, 100%);
+                        background-color: rgb(255, 0, 0);
+                        color: rgb(255, 255, 255);
                     }
                 }
                 .header__nav-menu-toggle {
