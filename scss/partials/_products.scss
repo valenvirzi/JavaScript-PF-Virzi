@@ -3,6 +3,8 @@
     grid-template-columns: 20% repeat(3, 1fr);
     grid-template-rows: 8rem repeat(3, 16rem);
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 
     .main-subpage__intro {
         grid-column: 1 / 5;
@@ -10,7 +12,7 @@
         display: flex;
         align-items: center;
         padding: 1rem 4rem;
-        border: 1px solid black;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.2);
         background-image: linear-gradient(to bottom, #ffffff, #eef1f5);
 
         .main-subpage__title {
@@ -27,6 +29,7 @@
         flex-direction: column;
         row-gap: 1rem;
         padding: 1rem 0.75rem 1rem 1.5rem;
+        border-right: 1px solid rgb(0, 0, 0, 0.2);
 
         .products__aside-clear-btn {
             width: fit-content;
@@ -161,7 +164,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        padding: 1rem 0.5rem;
+        padding: 1rem;
         gap: 1rem;
 
         .products-list__item {

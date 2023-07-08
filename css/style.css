@@ -227,6 +227,8 @@ ins {
   grid-template-columns: 20% repeat(3, 1fr);
   grid-template-rows: 8rem repeat(3, 16rem);
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .products .main-subpage__intro {
   grid-column: 1/5;
@@ -234,7 +236,7 @@ ins {
   display: flex;
   align-items: center;
   padding: 1rem 4rem;
-  border: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #ffffff, #eef1f5);
 }
 .products .main-subpage__intro .main-subpage__title {
@@ -249,6 +251,7 @@ ins {
   flex-direction: column;
   row-gap: 1rem;
   padding: 1rem 0.75rem 1rem 1.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .products .products__main-aside .products__aside-clear-btn {
   width: fit-content;
@@ -356,7 +359,7 @@ ins {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   gap: 1rem;
 }
 .products .products__main-list .products-list__item {
@@ -479,6 +482,67 @@ ins {
 }
 .products .products__main-list .products-list__item .products-list__item-main .products-list__item-form .products-list__item-form-cart:hover {
   background-color: rgb(216, 17, 89);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+.contact .contact__h2 {
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 85%;
+}
+.contact .contact__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 3rem;
+}
+.contact .contact__form .contact__form-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.contact .contact__form .contact__form-column .contact__form-column-element {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.contact .contact__form .contact__form-column .contact__form-column-element .contact__form-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.contact .contact__form .contact__form-column .contact__form-column-element .contact__form-input {
+  width: 26rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.contact .contact__form .contact__form-column .contact__form-column-element .contact__form-btn {
+  min-height: 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(143, 45, 86);
+}
+.contact .contact__form .contact__form-column .contact__form-column-element .contact__form-btn:hover {
+  background-color: rgb(216, 17, 89);
+}
+.contact .contact__form .one {
+  padding: 0rem 0;
+  row-gap: 3.15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

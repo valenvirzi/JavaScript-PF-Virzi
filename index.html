@@ -346,17 +346,29 @@
         </section>
         <section class="contact">
             <div id="contact"></div>
-            <h2 class="contact__h2">Ante cualquier duda, consulta o reclamo dejá tu mensaje acá abajo,<br>queremos
+            <h2 class="contact__h2">Ante cualquier duda, consulta o reclamo dejá tu mensaje acá abajo, queremos
                 conocer tu opinión</h2>
             <form class="contact__form" action="js/main.js">
-                <label class="contact__form-label" for="">Nombre:</label>
-                <input class="contact__form-input" type="text" placeholder="Ingresá tu nombre" required>
-                <label class="contact__form-label" for="">Correo Electrónico:</label>
-                <input class="contact__form-input" type="email" placeholder="Ingresá tu correo electrónico" required>
-                <label class="contact__form-label" for="">Mensaje:</label>
-                <textarea class="contact__form-input" name="" id="" cols="30" rows="10" placeholder="Ingresá tu mensaje"
-                    required></textarea>
-                <button class="contact__form-btn" type="submit">Enviar</button>
+                <div class="contact__form-column one">
+                    <div class="contact__form-column-element">
+                        <label class="contact__form-label" for="userName">Nombre:</label>
+                        <input id="userName" class="contact__form-input" type="text" placeholder="Ingresá tu nombre" required>
+                    </div>
+                    <div class="contact__form-column-element">
+                        <label class="contact__form-label" for="userEmail">Correo Electrónico:</label>
+                        <input id="userEmail" class="contact__form-input" type="email" placeholder="Ingresá tu correo electrónico" required>
+                    </div>
+                </div>
+                <div class="contact__form-column">
+                    <div class="contact__form-column-element">
+                        <label class="contact__form-label" for="userText">Mensaje:</label>
+                        <textarea id="userText" class="contact__form-input" name="" cols="20" rows="10" placeholder="Ingresá tu mensaje"
+                            required></textarea>
+                    </div>
+                    <div class="contact__form-column-element">
+                        <button class="contact__form-btn" type="submit">Enviar</button>
+                    </div>
+                </div>
             </form>
             <h2 class="contact__h2">También nos podes contactar por las redes sociales listadas debajo</h2>
         </section>
